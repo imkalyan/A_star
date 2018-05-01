@@ -267,53 +267,7 @@ void solvepuzzle(int mat[][4],int x,int y,int goal[][4])
 	NODE *temp1=head;
 
 	NODE *min;
-	/*while(temp!=NULL)
-	{
 	
-		min =extractmin(head);
-		/*
-		//printf("a \n");
-		//pop(temp1,min->matrix);
-		//printf("%d %d ",min->x,min->y);
-		if(min->cost==0)
-			{
-				printf("asd");
-				break;
-			}
-		else{
-			if(check_visited_closed(min)==0){
-			int i;
-			for ( i = 0; i < 4; i++)
-        	{
-         	   if (isSafe(min->x + row[i], min->y + col[i]))
-            	{
-            		
-                	// create a child node and calculate
-                // i	ts cost
-               		 NODE* child = createnode(min->matrix, min->x,
-                              min->y, min->x + row[i],
-                              min->y + col[i], min,
-                              min->level + 1);
-                		child->cost = misplacedtiles(child->matrix, goal);
- 					temp=insertdata(temp,child);
-                // Add child to list of live nodes
-               }
-        	}
-        //	printf("%d\n\n",z);					
-			}	
-		}
-	
-		/*
-		else
-		{
-			int d=findlength(temp);
-			printf("%d ",d);
-			break;
-		}
-		
-		mark_visited(min,min->parent);
-	}*/
-	//printf("%d",(head->data)->x);	*/
 }
 int main()
 {
